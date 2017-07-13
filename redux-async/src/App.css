@@ -1,0 +1,40 @@
+body {
+  background: paleGreen;
+  font-family: monospace;
+}
+
+h2 {
+  color: paleGreen;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #555;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.catsComponent {
+  height: 80vh;
+}
+
+.catsArray {
+  height: 85%;
+}
+
+.buttonContainer {
+  height: 15%;
+  margin-bottom: 0;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+}
