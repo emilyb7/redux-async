@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const catTile = ({ cat, }) => {
+const CatTile = ({ cat, }) => {
 
   return (
     <div className="tile">
