@@ -1,6 +1,8 @@
 body {
   background: paleGreen;
-  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -9,6 +11,7 @@ h2 {
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-header {
@@ -27,14 +30,43 @@ h2 {
 
 .catsArray {
   height: 85%;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .buttonContainer {
-  height: 15%;
   margin-bottom: 0;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .btn {
-  height: 30px;
-  width: 100px;
+  height: 4rem;
+  width: 10rem;
+  cursor: pointer;
+  background: hotpink;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.btn:disabled {
+  opacity: 0.2;
+}
+
+.tile {
+  height: 8rem;
+  width: 8rem;
+  margin: 0.5rem;
+  align-self: flex-start;
+}
+
+.tile img {
+  height: 100%;
+  width: 100%;
 }

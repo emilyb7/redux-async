@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Cats from './cats.js';
@@ -13,14 +12,17 @@ class App extends Component {
 
     const props = this.props;
 
-    console.log({props})
-
     return (
       <div className="App">
         <div className="App-header">
           <h2>All the cats</h2>
         </div>
-        <Cats cats={ props.cats } getCat={ props.getCat }/>
+        <Cats
+          cats={ props.cats }
+          getCat={ props.getCat }
+          newCat={ props.newCat }
+          isFetching={ props.isFetching }
+        />
       </div>
     );
   }
@@ -28,6 +30,7 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   cats: state.cats,
+  isFetching: state.isFetching,
 })
 
 export default connect(mapStateToProps, actions)(App)
