@@ -1,16 +1,21 @@
 import React from 'react';
 import axios from 'axios';
 
-import CatTile from './cat_tile.js';
+const catTile = ({ cat, }) => {
+
+  return (
+    <div className="tile">
+      <img src={ cat.img } />
+    </div>
+  )
+}
 
 const cats = ({ cats, getCat, newCat, isFetching, }) => {
 
-  console.log({cats})
 
   const giphyEndpoint = 'http://api.giphy.com/v1/gifs/random?apikey=0d4c89c495714308aca988fc0ab4b494&tag=cat';
 
   const returnNewCat = () => {
-    console.log("getting a cat")
     getCat()
     axios.get(giphyEndpoint)
       .then((res) => {
