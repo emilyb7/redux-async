@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Cats from './cats.js';
+import { Cats, } from './cats.js';
 
 import { connect } from 'react-redux'
 import * as actions from './actions.js'

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const CatTile = ({ cat, }) => {
+export const CatTile = ({ cat, }) => {
 
   return (
     <div className="tile">
@@ -10,7 +10,7 @@ const CatTile = ({ cat, }) => {
   )
 }
 
-const cats = ({ cats, getCat, newCat, isFetching, }) => {
+export const Cats = ({ cats, getCat, newCat, isFetching, }) => {
 
 
   const giphyEndpoint = 'http://api.giphy.com/v1/gifs/random?apikey=0d4c89c495714308aca988fc0ab4b494&tag=cat';
@@ -47,5 +47,3 @@ const cats = ({ cats, getCat, newCat, isFetching, }) => {
      </div>
    )
 }
-
-export default cats;
